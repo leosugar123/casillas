@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                  <title>Home</title>
+                  <link rel="stylesheet" href="style/style.css">
+                  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+                  
+                  <link rel="preconnect" href="https://fonts.googleapis.com">
+                  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                  <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    </head>
+    
+    
+    <body>
+   <div class="containerB">
+       
+       
+    <div class="header">  
+           
+           
+        <header>
+             <image src="images/CASILLAS-logo.png" class="img-responsive" alt="UML Assignment" style="width:200px;height:100px;"/>
+             <h1 class="Title">Casillas Consultancy</h1>
+             <h2 class="secondTitle"> Software Engineering Services</h2>
+             <ul class="w3-bar">
+              <li> <a href="index.html" class="w3-bar-item w3-button w3-padding-16 w3-text-white">Home</a></li>
+              <li><a href="application.html" class="w3-bar-item w3-button w3-padding-16 w3-text-white">Applications</a></li>
+              <li><a href="video.html" class="w3-bar-item w3-button w3-padding-16 w3-text-white">Videos</a></li>
+              <li> <a href="about.html" class="w3-bar-item w3-button w3-padding-16 w3-text-white">About me</a></li>
+              <li><a href="contact.html" class="w3-bar-item w3-button w3-padding-16 w3-text-white">Contact</a></li> 
+              <li><input type="text" class="w3-bar-item w3-input" placeholder="Search.." style="font-size:12pt; color: black"/>
+                  <a href="http://www.google.com" class="w3-bar-item w3-button w3-padding-16 w3-blue" style="size: 10px">Go</a></li>
+             </ul>          
+        </header>
+           
+     </div>
+       <div class="content-0"></div>
+       <div class="content-1">
+                       <h2> Applications </h2>
+<p>You should complete this part of the coursework using the android studio development
+environment, as is installed on the lab computers. You are free to use a physical android device,
+with hardware debugging enabled to debug your application if you wish, but marking will be
+conducted in the android emulator (i.e. your screencast must be of the emulator) so I would
+recommend using that instead. The emulator should be configured to emulate a Google Nexus
+phone, running API 21, Android 5.0 (Lollipop).
+The app you develop will be similar to the contacts app we all have in our smart phones today as
+illustrated in figure 2, except your app will display employee information. The scenario is that
+you are developing this app for the manager of a company that needs to have up to date
+employee information to hand at all times.
+With this in mind your app should at the very least connect to the RESTful web service that you
+created in Java in order to retrieve the employee JSON data. The app should then parse the
+JSON data appropriately and display it on screen in an appropriate way (i.e. ListView).</p> 
+        <image src="images/applications2.jpg" class="img-responsive w3-sepia-max w3-hover-grayscale" alt="Application" style="width:300px;height:300px;position:relative; left:520px;" /> >    
+           
+       </div>
+       <div class="content-2">
+             <image src="images/applications1.jpg" alt="Application" class="img-responsive w3-sepia-max w3-hover-grayscale" style="position:relative; left:530px; width:300px;height: 220px;"/>
+         <h2 >Code and Visual Quality (10%)</h2>
+<p>At a very minimum your app should display the name and email of all employees in the
+database. The better apps will have well thought out layout and style and display additional
+information to the user about the employees such as job title, salary etc. The overall look and
+design is up to you. The images/icons should be scaled appropriately, and the app should look
+reasonably well polished (sensibly laid out, readable text, standard contrasting text, icons
+and background colours colours). Your code should be sensibly designed, laid out
+consistently and well commented.</p>
+
+<h2 style="text-align: center">Server</h2>
+<p>Include some way of adding new employee information to the database. This can be achieved
+by adding another route to the HTTP server (e.g. http://localhost:8005/add_emp) which outputs
+an html form that can be filled and submitted by the user.
+Once submitted the server will need an additional route (e.g.
+http://localhost:8005/process_emp) which will process the data submitted by the user through
+the html form and add it to the SQLite database.
+Android App
+The tasks of talking to the server to retrieve data can sometimes take some time to complete.
+Leaving your app’s interface locked up whilst it performs this task is hardly going to enhance the
+user experience! In addition to this making network calls on the main app thread is not desirable
+in the app development world.
+Improve matters by handling the network calls that retrieve the data from your java server using
+the AsyncTask class, which will perform them in a new thread in the background. Remember
+to remove the StrictMode workaround discussed in lectures once threading is working.</p>
+       </div>
+       
+       <div class="footer">
+           
+                        <h3 class="author">Author: Leo Casillas</h3>
+                        <H3 class="author">Copyright &copy;2023</h3>
+                        <h3 class="email">leonardo.rivera@tcg.ac.uk</h3>
+                        <H3 class="college">Trafford college</h3>
+                      <a href="#" class="fa fa-facebook"></a>
+                      <a href="#" class="fa fa-twitter"></a>
+                      <a href="#" class="fa fa-linkedin"></a>
+                      <a href="#" class="fa fa-youtube"></a>
+                      <a href="#" class="fa fa-instagram"></a>
+            
+                     
+            
+            
+        </div>
+       
+       
+   </div>
+    </body>
+</html>
